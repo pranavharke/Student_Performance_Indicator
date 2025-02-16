@@ -1,4 +1,4 @@
-## Student Performance Indicator
+## Student Performance Indicator [👆🏻](https://studentperformanceindicator-pranavharke.streamlit.app/)
 
 ## Overview
 The **Student Performance Indicator** project leverages machine learning to analyze and predict student's outcomes based on various academic and behavioral factors. This initiative aims to provide valuable insights for educators, institutions, and students to enhance learning outcomes and decision-making processes.
