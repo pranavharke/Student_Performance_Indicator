@@ -14,8 +14,8 @@ class PredictPipeline:
     def predict(self, features):
         """Loads the trained model and preprocessor, processes the input features, and returns the predicted results"""
         try:
-            model_path = r'artifacts\model.pkl'
-            preprocessor_path = r'artifacts\preprocessor.pkl'
+            model_path = os.path.join("artifacts", "model.pkl")
+            preprocessor_path = os.path.join("artifacts", "preprocessor.pkl")
             print("Before Loading")
             model = load_object(file_path=model_path)
             preprocessor = load_object(file_path=preprocessor_path)
