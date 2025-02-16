@@ -29,3 +29,4 @@ class CustomException(Exception):
         """Returns the formatted error message when the exception is printed."""
         return self.error_message
 
+

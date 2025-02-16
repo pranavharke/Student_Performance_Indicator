@@ -6,10 +6,13 @@ from src.utils import load_object
 
 
 class PredictPipeline:
+    """This class is responsible for making predictions using a trained machine learning model.
+    It loads the pre-trained model and preprocessor, then transforms input features before prediction"""
     def __init__(self):
         pass
 
     def predict(self, features):
+        """Loads the trained model and preprocessor, processes the input features, and returns the predicted results"""
         try:
             model_path = 'artifacts\model.pkl'
             preprocessor_path = 'artifacts\preprocessor.pkl'
@@ -26,6 +29,7 @@ class PredictPipeline:
 
 
 class CustomData:
+    """This class is responsible for storing and processing user-input data to be converted into a format suitable for prediction"""
     def __init__(self,
                  gender: str,
                  race_ethnicity: str,
@@ -44,6 +48,7 @@ class CustomData:
         self.writing_score = writing_score
 
     def get_data_as_data_frame(self):
+        """Converts the user-provided input data into a Pandas DataFrame"""
         try:
             # This feature laels should match with dataframe
             custom_data_input_dict = {
